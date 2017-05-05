@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="s5">10sp</dimen>
+    <dimen name="PerformanceHistogram_xAxis_Height">50dp</dimen>
+    <dimen name="PerformanceHistogram_xDashLine_margin">40dp</dimen>
+    <dimen name="PerformanceHistogram_valueRectMargin">5dp</dimen>
+    <dimen name="PerformanceHistogram_valueRectWidth">20dp</dimen>
+</resources>

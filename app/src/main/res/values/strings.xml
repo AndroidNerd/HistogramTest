@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HistogramTest</string>
+
+    <string name="mYear">%1$d 年</string>
+    <string name="mMonth">%1$d月</string>
+    <string name="performance_currentMonth"></string>
+</resources>
