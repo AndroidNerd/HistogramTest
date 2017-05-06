@@ -248,8 +248,8 @@ public class PerformanceHistogram extends View implements Runnable {
             return;
         }
         String y = getResources().getString(R.string.mYear, calendar.get(Calendar.YEAR));
-        paintYearText.setColor(Color.TRANSPARENT);
-        canvas.drawRect(yearTextRect.left - monthXDefauleOffSet, yearTextRect.top, yearTextRect.right - monthXDefauleOffSet, yearTextRect.bottom, paintYearText);
+//        paintYearText.setColor(Color.TRANSPARENT);
+//        canvas.drawRect(yearTextRect.left - monthXDefauleOffSet, yearTextRect.top, yearTextRect.right - monthXDefauleOffSet, yearTextRect.bottom, paintYearText);
         paintYearText.setColor(yearTextColor);
         Paint.FontMetrics fontMetrics = paintYearText.getFontMetrics();
         int baseLine = (int) (yearTextRect.bottom + yearTextRect.top - fontMetrics.bottom - fontMetrics.top) >> 1;
@@ -264,7 +264,7 @@ public class PerformanceHistogram extends View implements Runnable {
         if (index == currentSelectedMonthIndex) {
             textColor = textColorSelected;
         }
-        paintText.setColor(Color.TRANSPARENT);
+//        paintText.setColor(Color.TRANSPARENT);
 
         Rect rect = monthRects[index];
         int m = year != null ? year.get(index) == null ? 0 : year.get(index).getMonth() : 0;
@@ -272,7 +272,7 @@ public class PerformanceHistogram extends View implements Runnable {
 //        if (m == calendar.get(Calendar.MONTH) + 1) {
 //            month = getResources().getString(R.string.performance_currentMonth);
 //        }
-        canvas.drawRect(rect.left - monthXDefauleOffSet, rect.top, rect.right - monthXDefauleOffSet, rect.bottom, paintText);
+//        canvas.drawRect(rect.left - monthXDefauleOffSet, rect.top, rect.right - monthXDefauleOffSet, rect.bottom, paintText);
         paintText.setColor(textColor);
         Paint.FontMetrics fontMetrics = paintText.getFontMetrics();
         int baseLine = (int) (rect.bottom + rect.top - fontMetrics.bottom - fontMetrics.top) >> 1;
